@@ -32,14 +32,14 @@ class Jugador {
 	}
 	
 	def boolean dejaLugarAOtro() {
-		if (criterioInscripcion.class.equals(typeof(ModoSolidario))) {
+		if (criterioInscripcion.class.equals(typeof(ModoSolidario))) {//Pregunta por clase
 			return true
-		} else {
+		} else {			//return true, return false? xD . Se supone que lo de arriba ya da como resultado un boole
 			return false
 		}
 	}
 
-	override toString() {
+	override toString() {//wtf?
 		//"Jugador (" + calificacion + ") - modo " + criterioInscripcion.toString()
 		nombre
 	}	
