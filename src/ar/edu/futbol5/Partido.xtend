@@ -30,7 +30,7 @@ class Partido {
 		estado = "G"
 	}
 
-	def validarInscripcion() {
+	def validarInscripcion() {//la forma en que se manejan los errores pareciara que estubiera programado en C :P
 		if (inscriptos.size < 10) {
 			return -1
 		}
@@ -90,6 +90,7 @@ class Partido {
 	}
 
 	def void cerrar() {
-		estado = "C"
+		estado = "C" //No le veo el sentido del estado, si se supone que no se pueden inscribir o algo asi, capaz estaria
+					//bueno que sea un objeto "estado" que se encarge de eso...
 	}
 }

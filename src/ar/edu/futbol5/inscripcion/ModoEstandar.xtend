@@ -4,7 +4,7 @@ import ar.edu.futbol5.inscripcion.CriterioInscripcion
 
 class ModoEstandar implements CriterioInscripcion {
 
-	override toString() {
+	override toString() {//no implementa nada de la interfaz...
 		"Estándar"
 	}
 		
