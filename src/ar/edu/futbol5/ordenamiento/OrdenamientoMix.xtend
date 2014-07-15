@@ -28,8 +28,7 @@ class OrdenamientoMix implements CriterioOrdenamiento {
 		]
 		
 		//se deberia separar comportamiento, aplicar por un lado y carlcular el valor por otro
-		//no entiendo bien como funciona la lista de criterios. divide por el size de la lista criterios en vez de la lista 
-		//de calificaciones??	
+			
 		}
 	
 }
