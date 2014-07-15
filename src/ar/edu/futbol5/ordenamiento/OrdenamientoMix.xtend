@@ -18,9 +18,13 @@ class OrdenamientoMix extends CriterioOrdenamiento {
 
 	override calcularValor(Jugador jugador) {
 
-		criterios.fold(0d, [acum, criterio|acum + criterio.calcularValor(jugador)]) / criterios.size
+		sumatoriaDeCriterios(jugador) / criterios.size
 
 	//se deberia separar comportamiento, aplicar por un lado y carlcular el valor por otro
+	}
+	
+	def sumatoriaDeCriterios(Jugador jugador) {
+		criterios.fold(0d, [acum, criterio|acum + criterio.calcularValor(jugador)])
 	}
 
 }
