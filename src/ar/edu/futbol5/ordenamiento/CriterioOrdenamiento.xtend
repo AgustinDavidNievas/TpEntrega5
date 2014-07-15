@@ -8,6 +8,7 @@ interface CriterioOrdenamiento {
 	
 	def List<Jugador> ordenar(Partido partido)
 
-	def (Jugador) => Double calcularValor()  // que es esto?? se supone que hay una lista en algun lado? :P
-		 
+	//def (Jugador) => Double calcularValor()  // que es esto?? se supone que hay una lista en algun lado? :P
+
+     def Double calcularValor (Jugador jugador)
 }
