@@ -27,6 +27,14 @@ class Jugador {
 		this.nombre = nombre
 	}
 
+	def modificarCalificacion(Double calificacion) {
+		this.calificacion = calificacion
+
+	}
+
+
+
+
 	def modoSolidario() {
 		this.criterioInscripcion = new ModoSolidario
 	}
@@ -41,9 +49,17 @@ class Jugador {
 	//		}
 	}
 
-//	override toString() {//wtf?
-//		//"Jugador (" + calificacion + ") - modo " + criterioInscripcion.toString()
-//		nombre
-//	}	
-// Este mensaje esta de mas
+	//	override toString() {//wtf?
+	//		//"Jugador (" + calificacion + ") - modo " + criterioInscripcion.toString()
+	//		nombre
+	//	}	
+	// Este mensaje esta de mas
+	def List<Double> ultimosDosPuntajes() {
+		this.getPuntajes.clone.reverse.take(2).toList
+	}
+	
+	def modificarPuntaje(List<Double> doubles) {
+		this.puntajes = doubles
+	}
+	
 }
