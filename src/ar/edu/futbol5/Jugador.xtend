@@ -39,9 +39,11 @@ class Jugador {
 		}
 	}
 
-	override toString() {//wtf?
-		//"Jugador (" + calificacion + ") - modo " + criterioInscripcion.toString()
-		nombre
-	}	
+//	override toString() {//wtf?
+//		//"Jugador (" + calificacion + ") - modo " + criterioInscripcion.toString()
+//		nombre
+//	}	
+
+// Este mensaje esta de mas
 }
 
