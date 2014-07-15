@@ -11,7 +11,7 @@ class Jugador {
 	@Property String nombre	
 	@Property Double calificacion
 	@Property List<Double> puntajes
-	CriterioInscripcion criterioInscripcion
+	@Property CriterioInscripcion criterioInscripcion
 	
 	new() {
 		this.puntajes = new ArrayList<Double>
@@ -28,15 +28,16 @@ class Jugador {
 	}
 	
 	def modoSolidario() {
-		criterioInscripcion = new ModoSolidario
+		this.criterioInscripcion = new ModoSolidario
 	}
 	
 	def boolean dejaLugarAOtro() {
-		if (criterioInscripcion.class.equals(typeof(ModoSolidario))) {//Pregunta por clase
-			return true
-		} else {			//return true, return false? xD . Se supone que lo de arriba ya da como resultado un boole
-			return false
-		}
+		this.criterioInscripcion.dejasLugarAOtro()
+//		if (criterioInscripcion.class.equals(typeof(ModoSolidario))) { //Pregunta por clase
+//			return true
+//		} else { //return true, return false? xD . Se supone que lo de arriba ya da como resultado un boole
+//			return false
+//		}
 	}
 
 //	override toString() {//wtf?
