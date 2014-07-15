@@ -3,7 +3,7 @@ package ar.edu.futbol5.ordenamiento
 import ar.edu.futbol5.Partido
 import ar.edu.futbol5.Jugador
 
-class OrdenamientoCalificacionUltimos2Partidos implements CriterioOrdenamiento {
+class OrdenamientoCalificacionUltimos2Partidos extends CriterioOrdenamiento {
 	
 	override ordenar(Partido partido) {
 		partido.getInscriptos.sortBy (jugador | calcularValor(jugador)).clone.reverse

@@ -5,7 +5,7 @@ import java.util.ArrayList
 import java.util.List
 import ar.edu.futbol5.Jugador
 
-class OrdenamientoMix implements CriterioOrdenamiento {
+class OrdenamientoMix extends CriterioOrdenamiento {
 	
 	List<CriterioOrdenamiento> criterios 
 	
